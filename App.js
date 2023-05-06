@@ -7,15 +7,19 @@ import {
   TextInput,
   Button,
   TouchableOpacity,
+  ScrollView,
 } from 'react-native';
 import React from 'react';
+import FlatCards from './components/FlatCards';
+import ElevatedCard from './components/ElevatedCard';
 
 const App = () => {
   return (
     <SafeAreaView>
-      <View style={style.container}>
-        <Button title="save" color="red" />
-      </View>
+      <ScrollView>
+        <FlatCards />
+        <ElevatedCard />
+      </ScrollView>
     </SafeAreaView>
   );
 };
